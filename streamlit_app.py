@@ -22,7 +22,7 @@ def predict(image_path):
 
 # Use Streamlit to create a file uploader and make predictions on uploaded images
 st.title("Brain Tumor Classifier")
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose only the MRL Image.....", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     # Save the uploaded file to disk
     image_path = "uploaded_image.jpg"
